@@ -1,0 +1,13 @@
+printf "\033[1;32mStarting pre-commit checks\033[0m\n"
+
+cd backend
+printf "\n\033[1;32mChecking backend\033[0m\n"
+npm run lint:check
+npm run format:check
+
+cd ../frontend
+printf "\n\033[1;32mChecking frontend\033[0m\n"
+npm run lint:check
+npm run format:check
+
+exit 1
