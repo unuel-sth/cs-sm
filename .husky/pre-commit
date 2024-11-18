@@ -9,5 +9,3 @@ cd ../frontend
 printf "\n\033[1;32mChecking frontend\033[0m\n"
 npm run lint:check
 npm run format:check
-
-exit 1
